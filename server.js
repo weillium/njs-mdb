@@ -13,7 +13,7 @@ MongoClient.connect(database.url, (err, client) => {
         return console.log(err);
     }
 
-    db = client.db('testdb')
+    db = client.db('njs-mdb')
     require('./app/routes')(app, db);
 
     app.listen(port, () => {

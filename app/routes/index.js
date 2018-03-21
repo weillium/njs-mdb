@@ -1,5 +1,6 @@
-const routes    = require('./routes');
+const resumeRoutes    = require('./resume_routes');
+const userRoutes      = require('./user_routes');
 
 module.exports = function(app, db) {
-    routes(app, db);
+    resumeRoutes(app, db);
 }
