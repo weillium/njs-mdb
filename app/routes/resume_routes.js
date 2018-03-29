@@ -18,7 +18,7 @@ module.exports = function(app, db) {
         const resume = {title: req.body.title, file: req.body.file}
         db.collection('testdb').insert(resume, (err, result) => {
             if (err) {
-                res.send({ 'error': 'wtf' });
+                res.send({ 'error': 'An error has occurred' });
             } else {
                 console.log('new resume posted');
                 res.send(result.ops[0]);
